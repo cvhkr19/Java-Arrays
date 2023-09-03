@@ -1,0 +1,1 @@
+Find maximum and minimum element from an array.
