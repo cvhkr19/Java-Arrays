@@ -1,0 +1,10 @@
+In a town there are n people labelled from 1 to n. There is a rumour that one of these people is secretly the town judge.
+If the town judge exists, then  : 
+1) The town judge trusts nobody.
+2) Everyone (except the town judge trusts the town judge. 
+3) there is exactly one person that satisfies properties 1 and 2. 
+You are given an array trust where trust[ai,bi] representing that the person labelled ai trusts the person labelled bi. Return the label of the town judge if the town judge exists and can be identified, or return -1 otherwise. 
+
+Approaches :
+1) Find missing number, check if it has n-1 votes. O(3n)
+2) -1 for things on the left and +1 for stuff on the right O(2n).
