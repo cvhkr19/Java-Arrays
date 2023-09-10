@@ -1,0 +1,12 @@
+1) Given a function 'int f(unsigned int x)' which takes a non-negative integer 'x' as input and returns an integer as output. The function is monotonically increasing with respect to the value of x, i.e., the value of f(x+1) is greater than f(x) for every input x. Find the value 'n' where f() becomes positive for the first time. Since f() is monotonically increasing, the values of f(n+1), f(n+2),... Must be positive and values of f(n-2), f(n-3),... Must be negative.
+
+Approaches :
+
+1) Multiply 1 with a scaling factor (x), till you find a range where the number exists. Apply Binary Search or ternary search after that.
+
+Q) Binary Search v/s Ternary Search ?
+
+A) 
+
+2) Is it possible to use geometry and find ? 
+A) Probably No, Data insufficient and the function need not be invertible. A strictly monotonical function is always invertible.
