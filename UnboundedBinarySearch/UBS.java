@@ -4,13 +4,14 @@ public class UBS {
     static int f(int x){
         int posZero = 67582363; // point where the function returns zero
         if(x > posZero){  // positive after
-            return (int)Math.exp(x);  // can be changed as long as it returns a +ve integer.
+            return x;  // can be changed as long as it returns a +ve integer.
+                       // Note : The function should remain monotonic.
         }
         else if(x == posZero){
             return 0;
         }
         else if(x > 0){  // negative before
-            return -(int)Math.exp(x); // can be changed as long as it returns a -ve integer.
+            return -x; // can be changed as long as it returns a -ve integer.
         }
         else {
             System.out.println("Error : Function only accepts non-negative integers...");
